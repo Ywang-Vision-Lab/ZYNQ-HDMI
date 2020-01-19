@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Jan 18 21:13:44 2020
+# Process ID: 7468
+# Current directory: /home/maswangy/work/zynq_new/10_Advanced/myproject/00_hdmi/first.runs/synth_1
+# Command line: vivado -log hdmi_colorbar_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_colorbar_top.tcl
+# Log file: /home/maswangy/work/zynq_new/10_Advanced/myproject/00_hdmi/first.runs/synth_1/hdmi_colorbar_top.vds
+# Journal file: /home/maswangy/work/zynq_new/10_Advanced/myproject/00_hdmi/first.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source hdmi_colorbar_top.tcl -notrace

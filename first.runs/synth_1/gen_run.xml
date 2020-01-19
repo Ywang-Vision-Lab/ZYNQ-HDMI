@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1579400020">
+  <File Type="VDS-TIMING-PB" Name="hdmi_colorbar_top_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="hdmi_colorbar_top_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="hdmi_colorbar_top.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="hdmi_colorbar_top_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="hdmi_colorbar_top_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="hdmi_colorbar_top_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="hdmi_colorbar_top.vds"/>
+  <File Type="REPORTS-TCL" Name="hdmi_colorbar_top_reports.tcl"/>
+  <File Type="PA-TCL" Name="hdmi_colorbar_top.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/first.srcs/asyn_rst_syn.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/asyn_rst_syn.v"/>
+        <Attr Name="ImportTime" Val="1570671985"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/first.srcs/dvi_encoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/dvi_encoder.v"/>
+        <Attr Name="ImportTime" Val="1561946702"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/first.srcs/dvi_transmitter_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/dvi_transmitter_top.v"/>
+        <Attr Name="ImportTime" Val="1570671943"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/first.srcs/serializer_10_to_1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/serializer_10_to_1.v"/>
+        <Attr Name="ImportTime" Val="1570672029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/first.srcs/video_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/video_display.v"/>
+        <Attr Name="ImportTime" Val="1570671852"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/first.srcs/video_driver.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/video_driver.v"/>
+        <Attr Name="ImportTime" Val="1570671713"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/first.srcs/hdmi_colorbar_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/hdmi_colorbar_top.v"/>
+        <Attr Name="ImportTime" Val="1570628374"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="hdmi_colorbar_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/new.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>

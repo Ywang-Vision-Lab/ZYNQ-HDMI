@@ -1,0 +1,76 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Sat Jan 18 21:16:03 2020
+| Host         : N550JV running 64-bit Ubuntu 18.04.2 LTS
+| Command      : report_control_sets -verbose -file hdmi_colorbar_top_control_sets_placed.rpt
+| Design       : hdmi_colorbar_top
+| Device       : xc7z010
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     7 |
+| Unused register locations in slices containing registers |    30 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            1 |
+|      7 |            1 |
+|     10 |            1 |
+|     11 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              22 |            7 |
+| No           | No                    | Yes                    |              28 |           12 |
+| No           | Yes                   | No                     |              22 |           10 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              10 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+----------------------+---------------------------------------+------------------+----------------+
+|       Clock Signal       |     Enable Signal    |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++--------------------------+----------------------+---------------------------------------+------------------+----------------+
+|  clk_wiz_0/inst/clk_out1 |                      | u_rgb2dvi_0/reset_syn/reset_1_i_1_n_0 |                1 |              2 |
+|  clk_wiz_0/inst/clk_out1 |                      | u_video_display/SR[0]                 |                2 |              4 |
+|  clk_wiz_0/inst/clk_out1 |                      | u_video_driver/din_q_reg[0]           |                4 |              7 |
+|  clk_wiz_0/inst/clk_out1 | u_video_driver/cnt_v | u_video_driver/cnt_v[9]_i_1_n_0       |                4 |             10 |
+|  clk_wiz_0/inst/clk_out1 |                      | u_video_driver/cnt_h[10]_i_1_n_0      |                4 |             11 |
+|  clk_wiz_0/inst/clk_out1 |                      |                                       |                7 |             22 |
+|  clk_wiz_0/inst/clk_out1 |                      | u_rgb2dvi_0/reset_syn/AR[0]           |               11 |             26 |
++--------------------------+----------------------+---------------------------------------+------------------+----------------+
+
+
